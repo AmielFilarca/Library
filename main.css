@@ -81,7 +81,8 @@ body {
 .form-js {
   display: none;
   position: absolute;
-  width: 30%;
+  width: 25%;
+  min-width: 300px;
   height: 50%;
   top: 15%;
   left: 35%;
@@ -251,4 +252,19 @@ input[type="number"] {
   background: #222831;
   color: #ececec;
   transition: all 0.4s ease 0s;
+}
+
+@media only screen and (max-width: 1000px) {
+  .book {
+    padding: 15px 10px;
+    min-width: 45%;
+    font-size: 12px;
+  }
+  .book button {
+    font-size: 10px;
+  }
+  .form-js {
+    left: 5%;
+    width: 90vw;
+  }
 }
